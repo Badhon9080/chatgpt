@@ -1,0 +1,562 @@
+/*
+Theme Name: 
+Author: 
+Version: 1.0.0
+
+
+Table of Content
+===================================================
+
+    1. Common Css
+    2. Nav Section
+    3. Banner Section
+*/
+/* Common Css Start */
+h1,h2,h3,h4,h5,h6,
+p,
+ul,ol,
+span,
+small{
+    margin: 0;
+    padding: 0;
+}
+ol,ul{
+    list-style-type: none;
+}
+
+a,a:hover{
+    text-decoration: none;
+}
+/*//Common CSS End*/
+
+/*Nav Section CSS Start*/
+#nav{
+    background-color: #eee;
+}
+.brand img{
+    transition: all linear 0.5s;
+}
+.brand:hover img{
+    margin-left: 5px;
+}
+#main_menu ul li a{
+    transition: all linear 0.5s;
+    font-weight: bold;
+    padding: 17px;
+}
+#main_menu ul li:hover a{
+    color: orange;
+}
+/*//Nav Section CSS End*/
+
+/*Banner Section CSS Start*/
+.banner_slide_item{
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+    height: 560px;
+}
+.banner_slide_item::before{
+    position: absolute;
+    background-color: rgba(57, 58, 69, 0.60);
+    inset: 0;
+    z-index: -1;
+    content: '';
+}
+.banner_slick_arrow{
+    top: 254px;
+    font-size: 25px;
+    font-weight: bold;
+    position: absolute;
+    background-color: orange;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 8px 9px; 
+    z-index: 999;
+}
+.banner_slick_arrow.fa-arrow-left{
+    left: 13px;
+}
+.banner_slick_arrow.fa-arrow-right{
+    right: 13px;
+}
+
+.banner_slider_dots{
+    
+    left: 692px;
+    position: absolute;
+    text-align: center;
+    
+    display: flex;
+    flex-wrap: wrap;
+    top: 497px;
+    font-size: 0;
+}
+.banner_slider_dots li{
+    
+    line-height: 0;
+}
+.banner_slider_dots li button{
+   margin-left: 22px;
+    
+    border: 2px solid orange;
+    border-radius: 50%;
+    background: none;
+    width: 17px;
+    height: 17px;
+}
+.banner_slider_dots li.slick-active button{
+    background-color: orange;
+    border: none;
+}
+
+.banner_slide_small_heading{
+    margin-top: 142px;
+}
+.banner_slide_small_heading h3{
+    font-weight: bold;
+    color: #fff;
+}
+
+.border_class{
+    margin-top: 17px;
+}
+.banner_slide_border{
+    width: 201px;
+    border: 2px dotted orange;
+    margin: auto;
+}
+.banner_slide_bigger_heading{
+    margin-top: 13px;
+}
+.banner_slide_bigger_heading h1{
+    letter-spacing: 13px;
+    font-weight: bold;
+    color: #fff;
+    font-size: 50px;
+}
+.banner_slide_paragraph{
+    margin-top: 13px;
+}
+.banner_slide_paragraph p{
+    margin: auto;
+    width: 755px;
+    color: #fff;
+}
+.banner_slide_link{
+  margin-top: 52px;
+}
+.banner_slide_link a{
+    font-size: 20px;
+    transition: all linear 0.5s;
+    font-weight: bold;
+    border: 1px solid orange;
+    color: #fff;
+    padding: 13px 17px;
+}
+.banner_slide_link:hover a{
+    background-color: orange;
+    border-radius: 8px;
+    border: none;
+}
+/*//Banner Section CSS End*/
+/*About Section CSS Start*/
+#about{
+    margin-top: 72px;
+}
+.about_image_section{
+    margin-left:92px;
+}
+.about_image_section img{
+    height: 302px;
+    border-right: 3px groove orange;
+    width: 490px;
+}
+.about_written_section{
+    margin-left: -113px;
+}
+.type{
+    color: orange;
+}
+.about_written_section_heading h3{
+    display: inline-block;
+    color: #000;
+    font-weight: bold;
+    padding-bottom: 5px;
+    border-bottom: 3px dotted orange;
+}
+.about_written_section_paragraph{
+    margin-top: 17px;
+}
+.about_written_section_paragraph p{
+    text-align: justify;
+    font-weight: bold;
+    color: #000;
+    width: 647px;
+}
+.about_written_section_read_more{
+    margin-top: 25px;
+}
+.about_written_section_read_more a{
+    font-size: 20px;
+    transition: all linear 0.5s;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 1px solid orange;
+    color: #000;
+    padding: 13px 17px;
+}
+.about_written_section_read_more:hover a{
+    background-color: orange;
+    color: #fff;
+    border-radius: 8px;
+    border: none;
+}
+/*//About Section CSS End*/
+
+/*Achevement Section CSS Start*/
+#achievement{
+    margin-top: 72px;
+    position: relative;
+    background-image: url(../img/achievement.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 383px;
+    z-index: 1;
+}
+#achievement::before{
+    background-color: rgba(152, 146, 141, 0.60);
+    position: absolute;
+    inset: 0;
+    content: '';
+    z-index: -1;
+}
+.achievement_heading{
+    margin-top: 32px;
+}
+.achievement_heading h3{
+    display: inline-block;
+    color: #fff;
+    border-bottom: 1px dotted orange;
+    padding-bottom: 5px;
+}
+.achievement_section_part{
+    margin-top: 52px;
+}
+.complete_icon_network i{
+    font-size: 72px;
+    font-weight: bold;
+    color: #fff;
+}
+.achievement_section_professional_part{
+    margin-top: 17px;
+}
+.achievement_section_professional_part h5{
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+}
+.achievement_section_numbers_icons_part{
+    margin-top: 22px;
+}
+.achievement_section_numbers_icons_part p{
+    font-size: 62px;
+    font-weight: bold;
+    color: orange;
+}
+/*//Achievement Section CSS End*/
+
+
+
+/*Gallary Section CSS Start*/
+#gallary{
+    margin-top: 72px;
+}
+.gallary_heading h3{
+    font-weight: bold;
+    display: inline-block;
+   color: #000;
+   border-bottom: 3px dotted orange;
+   padding-bottom: 5px;
+}
+.gallary_menu_filter{
+    margin-top: 42px;
+}
+.gallary_menu_filter ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.gallary_menu_filter ul li{
+    font-weight: bold;
+    margin-left: 17px;
+    color: #000;
+    cursor: pointer;
+    padding: 8px;
+}
+.gallary_menu_filter ul li:hover,
+.gallary_menu_filter ul li.active{
+    background-color: orange;
+    color: #fff;
+    border-radius: 8px;
+}
+.gallary_filter_item{
+    margin-top: 52px;
+}
+.gallary_image_item{
+    position: relative;
+}
+.gallary_image_item img{
+    height: 200px;
+    transition: all linear 0.5s;
+    width: 300px;
+ padding: 15px 15px;
+}
+
+.gallary_image_item:hover img{
+    background-color: #eee;
+}
+
+.gallary_image_item_overlay{
+    left: 15px;
+    transition: all linear 0.5s;
+    visibility: hidden;
+    right: 39px;
+    position: absolute;
+    background-color: rgba(85, 83, 98, 0.40);
+    bottom: 15px;
+    top: 15px;
+    opacity: 0;
+}
+.gallary_image_item:hover .gallary_image_item_overlay{
+    visibility: visible;
+    opacity: 1;
+}
+.gallary_image_item_overlay_heading{
+    margin-top: 62px;
+}
+.gallary_image_item_overlay_heading h4{
+    color: #fff;
+    font-size: 16px;
+}
+.gallary_image_item_overlay_paragraph{
+    margin-top: 3px;
+}
+.gallary_image_item_overlay_paragraph p{
+    color: #fff;
+    font-size: 11px;
+}
+.gallary_image_item_overlay_icon {
+    margin-top: 5px;
+}
+.gallary_image_item_overlay_icon a i{
+    transition: all linear 0.5s;
+    background-color: orange;
+    color: #fff;
+    padding: 4px 8px;
+}
+.gallary_image_item_overlay_icon a:hover i{
+    color: #000;
+    border-radius: 8px;
+}
+
+/*//Gallary Section CSS End*/
+/*Offer Section CSS Start*/
+.offer_content_heading{
+    margin-top: 72px;
+}
+.offer_content_heading h3{
+    font-weight: bold;
+    display: inline-block;
+    color: #000;
+    border-bottom: 3px dotted orange;
+    padding-bottom: 5px;
+}
+.offer_section_part {
+    margin-top: 82px;
+}
+.offer_image_section_part{
+    margin-left: 45px;
+}
+.offer_image_section_part img{
+    height: 520px;
+    border-radius: 13px 0 0 13px;
+    width: 600px;
+}
+.offer_written_section_part{
+    height: 520px;
+    margin-left: -48px;
+    border-radius: 0 13px  13px 0;
+     background-color: orange;
+     width: 600px;
+}
+.offer_written_section_part_content_heading {
+    padding-top: 132px;
+}
+.offer_written_section_part_content_heading h3{
+    letter-spacing: 9px;
+    font-weight: bold;
+    color: #000;
+    font-size: 33px;
+}
+.offer_written_section_part_content_paragraph{
+    margin-top: 11px;
+}
+.offer_written_section_part_content_paragraph p{
+    font-weight: bold;
+    color: #000;
+}
+.count_down{
+    margin-top: 72px;
+}
+.count_down_item{
+    margin: auto;
+}
+.discount{
+    font-size: 62px;
+    font-weight: bold;
+    border-bottom: 3px dotted #000;
+    display: inline-block;
+    padding-bottom: 1px;
+}
+.during{
+    margin-top: 9px;
+}
+.during span{
+    font-weight: bold;
+    color: #000;
+}
+/*//Offer Section CSS End*/
+/*Portfolio Section CSS Start*/
+#portfolio{
+    margin-top: 72px;
+}
+.portfolio_heading h3{
+    font-weight: bold;
+    display: inline-block;
+    color: #000;
+    border-bottom: 3px dotted orange;
+    padding-bottom: 5px;
+}
+.portfolio_section_part{
+    margin-top: 52px;
+}
+.portfolio_section_img{
+    position: relative;
+}
+.portfolio_section_img img{
+    height: 200px;
+    border: 4px groove orange;
+    width: 300px;
+}
+.portfolio_section_img_overlay{
+    left: 4px;
+    position: absolute;
+    top: 3px;
+}
+.portfolio_section_img_overlay_icons a i{
+    transition: all linear o.5s;
+    background-color: orange;
+    color: #000;
+    padding: 4px 8px;
+}
+.portfolio_section_img_overlay_icons a:hover i{
+    color: #fff;
+}
+/*//Portfolio Section CSS End*/
+/*Contact Section CSS Start*/
+.contact_content_heading{
+    margin-top: 72px;
+}
+.contact_content_heading h3{
+    font-weight: bold;
+    display: inline-block;
+    color: #000;
+    border-bottom: 3px dotted orange;
+    padding-bottom: 5px;
+}
+.contact_adreess_map{
+    margin-top: 52px;
+    position: relative;
+}
+.contact_adreess_map_overlay{
+    left: 432px;
+    top: 132px;
+    position: absolute;
+}
+.contact_adreess_map_form{
+    background-color: rgba(245, 232, 144, 0.40);
+     width: 455px;
+        height: 538px;
+}
+.calendar_form{
+    margin-top: 20px;
+}
+#day{
+    left: 69px;
+    height: 32px;
+    /* margin-left: 16px; */
+    color: #7e8287;
+    border: none;
+    position: absolute;
+   
+}
+#month{
+    left: 171px;
+    height: 32px;
+    /* margin-left: 71px; */
+    color: #7e8287;
+    border: none;
+    position: absolute;
+    
+}
+#year{
+    left: 311px;
+      height: 32px;
+      color: #7e8287;
+      border: none;
+      position: absolute;
+      
+}
+.name_form{
+    padding-top: 42px;
+}
+.name_form input{
+    width: 322px;
+    border: none;
+}
+.email_form{
+    padding-top: 17px;
+}
+.email_form input{
+    width: 322px;
+    border: none;
+}
+.subject_form{
+    padding-top: 59px
+}
+.subject_form input{
+    height: 42px;
+    width: 322px;
+    border: none;
+}
+.message_form{
+    padding-top: 17px;
+}
+.message_form textarea{
+    height: 182px;
+    width: 322px;
+    border: none;
+}
+.submit{
+    padding-top: 30px;
+}
+.submit a{
+    font-weight: bold;
+    background-color: orange;
+    color: #fff;
+    padding: 13px 17px;
+}
+/*//Contact Section CSS End*/
